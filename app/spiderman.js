@@ -7,6 +7,12 @@ class Spiderman{
         this.movies= movies;
         this.studio=studio;
     }
-}
 
+    getInfo() {
+        return `Hey, I'm ${this.actor} from ${this.studio} studio`;
+      }
+
+}
+const tomHolland = new Spiderman("Spiderman Marvel",25,"Tom Holland",5, "Marvel")
+console.log(tomHolland.getInfo());
 module.exports = Spiderman
